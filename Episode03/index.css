@@ -11,10 +11,16 @@ body {
   align-items: center;
   background-color: blanchedalmond;
   font-size: 2rem;
+  padding: 0 4rem;
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+p {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-top: 4rem;
 }
