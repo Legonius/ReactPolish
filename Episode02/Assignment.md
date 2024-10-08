@@ -1,4 +1,4 @@
-# Theory Assignment:
+Assignment 02
 
 ● - What is `NPM`?
 

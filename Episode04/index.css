@@ -55,8 +55,9 @@ nav > div > img {
 }
 .card {
   background-color: rgba(128, 128, 128, 0.183);
+  height: 25rem;
   flex-grow: 0;
-  width: 12rem;
+  width: 20rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -64,21 +65,40 @@ nav > div > img {
   border-radius: 10px;
   border: 2px solid transparent;
 }
+.card > div > img {
+  width: 100%;
+  background-size: cover;
+}
 .card:hover {
   border: 2px solid orange;
 }
 .card > div:nth-child(1) {
-  height: 7rem;
+  position: relative;
+  height: 11.8rem;
   width: 100%;
   border-radius: 10px;
-  background: linear-gradient(135deg, yellow, white, green, red, white, orange);
+  overflow: hidden;
+}
+.card > div:nth-child(1) > span {
+  width: 2rem;
+  background-color: green;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
 }
 .card > div:nth-last-child(1) {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
   gap: 0.5rem;
+}
+.card > div:nth-last-child(1) > span:not(:first-child) {
+  color: gray;
 }
 .card > div > button {
   width: 100%;

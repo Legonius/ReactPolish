@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import data from "./data.json";
 
+let res = data.sections.SECTION_SEARCH_RESULT;
 const footer = (
   <footer style={{ textAlign: "center", marginTop: "4rem" }}>
     Zaw Min Thu, proud student of Akshay Saini
@@ -23,17 +25,20 @@ function NavBar() {
   );
 }
 
-const Card = ({ dish }) => {
+const Card = ({ obj }) => {
+  const { order } = obj;
+  const { name, cuisine, image, rating } = obj.info;
   return (
     <div className="card">
       <div>
-        <img src="" />
+        <img src={image.url} />
+        <span className="stars">{rating.aggregate_rating}</span>
       </div>
       <div>
-        <span>{dish}</span>
-        <span>Stars</span>
-        <span>Price</span>
-        <button>Click</button>
+        <span>{name}</span>
+        <span>{cuisine.map((n) => n.name).join(", ")}</span>
+        <span>{order.deliveryTime}</span>
+        <button>Order</button>
       </div>
     </div>
   );
@@ -41,17 +46,12 @@ const Card = ({ dish }) => {
 
 const Body = () => (
   <main className="cards-container">
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
-    <Card dish={"Biryani"} />
+    {res.map((restaurent) => (
+      <Card key={restaurent.info.resId} obj={restaurent} />
+    ))}
+    {res.map((restaurent) => (
+      <Card key={restaurent.info.resId} obj={restaurent} />
+    ))}
   </main>
 );
 
