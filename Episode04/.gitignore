@@ -1,0 +1,4 @@
+/node_modules
+/dist
+.code-cache
+.parcel-cache

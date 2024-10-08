@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-size: 1.1rem;
+  padding: 0 4rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 3.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 1px black solid;
+  padding: 0 0.8rem;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+nav > ul > li {
+  cursor: pointer;
+}
+nav > div {
+  height: 100%;
+  overflow: hidden;
+}
+nav > div > img {
+  width: 6rem;
+  object-fit: cover;
+}
+/* main body section */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.card {
+  background-color: rgba(128, 128, 128, 0.183);
+  flex-grow: 0;
+  width: 12rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+.card:hover {
+  border: 2px solid orange;
+}
+.card > div:nth-child(1) {
+  height: 7rem;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, yellow, white, green, red, white, orange);
+}
+.card > div:nth-last-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card > div > button {
+  width: 100%;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOoter */
+footer {
+  padding: 1.2rem;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+}
