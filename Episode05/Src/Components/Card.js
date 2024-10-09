@@ -5,7 +5,11 @@ const Card = ({ obj }) => {
     <div className="card">
       <div>
         <img src={image.url} />
-        <span className="stars">{rating.aggregate_rating}</span>
+        <span className="stars">
+          {Number(rating.aggregate_rating) > 0
+            ? rating.aggregate_rating
+            : "New"}
+        </span>
       </div>
       <div>
         <span>{name}</span>

@@ -80,7 +80,8 @@ nav > div > img {
   overflow: hidden;
 }
 .card > div:nth-child(1) > span {
-  width: 2rem;
+  min-width: 2rem;
+  padding: 0 0.2rem;
   background-color: green;
   position: absolute;
   bottom: 0.5rem;
@@ -115,4 +116,12 @@ footer {
   border-radius: 10px;
   color: white;
   width: 100%;
+}
+
+button {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 1rem;
+  cursor: pointer;
 }
