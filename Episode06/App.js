@@ -1,34 +1,17 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import data from "./Src/Utils/data.json";
 import NavBar from "./Src/Components/NavBar";
 import Footer from "./Src/Components/Footer";
 import Body from "./Src/Components/Body";
 
 // Component Composition => Component which return component is call.
 const Apps = () => {
-  const [filtered, setFiltered] = useState(false);
-  const [restaurentList, setRestaurentList] = useState([]);
+  console.log("render");
 
-  const filterList = () => {
-    if (!filtered) {
-      let filter = restaurentList?.filter((res) => Number(res.rating) >= 3);
-      setRestaurentList(filter);
-      setFiltered(!filtered);
-    } else {
-      setFiltered(!filtered);
-      setRestaurentList(restaurentList);
-    }
-  };
   return (
     <div className="container">
       <NavBar />
-      <div style={{ width: "100%", paddingBottom: "2rem" }}>
-        <button onClick={filterList}>
-          {!filtered ? "Filter High Ratings" : "Unfilter"}
-        </button>
-      </div>
-      <Body props={{ restaurentList, setRestaurentList }} />
+      <Body />
       <Footer />
     </div>
   );

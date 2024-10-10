@@ -1,6 +1,7 @@
 import { NAV_LOGO } from "../Utils/links";
 
 export default function NavBar() {
+  console.log("Navbar");
   return (
     <nav>
       <div>

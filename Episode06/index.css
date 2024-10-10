@@ -130,3 +130,21 @@ button {
   padding: 10px 1rem;
   cursor: pointer;
 }
+
+#filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#filter > form {
+  display: flex;
+  align-items: center;
+}
+#filter > form > input {
+  height: 100%;
+  width: 15rem;
+  padding: 0 0.5rem;
+  color: gray;
+  font-size: 1.1rem;
+}

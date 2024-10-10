@@ -3,7 +3,7 @@ const Card = ({ obj }) => {
   return (
     <div className="card">
       <div>
-        <img src={images[0]} />
+        <img src={images[0]} loading="lazy" />
         <span className="stars">{Number(rating) > 0 ? rating : "New"}</span>
       </div>
       <div>
