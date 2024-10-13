@@ -5,20 +5,24 @@ import Apps from "./App";
 import About from "./Src/pages/About";
 import ErrorPage from "./Src/pages/Error";
 import Contacts from "./Src/pages/Contacts";
+import Body from "./Src/Components/Body";
 
 const appRoute = createBrowserRouter([
   {
     path: "/",
     element: <Apps />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contacts",
-    element: <Contacts />,
+    children: [
+      { path: "/", element: <Body /> },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contacts",
+        element: <Contacts />,
+      },
+    ],
   },
 ]);
 const root = createRoot(document.getElementById("root"));

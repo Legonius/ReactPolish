@@ -1,7 +1,7 @@
 import NavBar from "./Src/Components/NavBar";
 import Footer from "./Src/Components/Footer";
-import Body from "./Src/Components/Body";
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 // Component Composition => Component which return component is call.
 const Apps = () => {
@@ -10,7 +10,7 @@ const Apps = () => {
   return (
     <div className="container">
       <NavBar />
-      <Body />
+      <Outlet />
       <Footer />
     </div>
   );
