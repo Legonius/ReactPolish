@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-size: 1.1rem;
+  padding: 0 4rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 3.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 1px black solid;
+  padding: 0 0.8rem;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+nav > ul > li {
+  cursor: pointer;
+}
+nav > div {
+  height: 100%;
+  overflow: hidden;
+}
+nav > div > img {
+  width: 6rem;
+  object-fit: contain;
+}
+/* main body section */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.card {
+  background-color: rgba(128, 128, 128, 0.183);
+  height: 25rem;
+  flex-grow: 0;
+  width: 20rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+.card > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card > div > img {
+  height: 100%;
+  object-fit: cover;
+}
+.card:hover {
+  border: 2px solid orange;
+}
+.card > div:nth-child(1) {
+  position: relative;
+  height: 11.8rem;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card > div:nth-child(1) > span {
+  min-width: 2rem;
+  padding: 0 0.2rem;
+  background-color: green;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.card > div:nth-last-child(1) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.5rem;
+}
+.card > div:nth-last-child(1) > span:not(:first-child) {
+  color: gray;
+}
+.card > div > button {
+  width: 100%;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOoter */
+footer {
+  padding: 1.2rem;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+}
+
+button {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 1rem;
+  cursor: pointer;
+}
+
+#filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#filter > form {
+  display: flex;
+  align-items: center;
+}
+#filter > form > input {
+  height: 100%;
+  width: 15rem;
+  padding: 0 0.5rem;
+  color: gray;
+  font-size: 1.1rem;
+}
