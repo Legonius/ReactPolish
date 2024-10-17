@@ -31,7 +31,7 @@ const higherOrderComponentCard = (Card) => {
         >
           recommended
         </div>
-        <Card obj={props.obj} />
+        <Card {...props} />
       </div>
     );
   };
