@@ -7,7 +7,7 @@ import ErrorPage from "./Src/pages/Error";
 import Contacts from "./Src/pages/Contacts";
 import Body from "./Src/Components/Body";
 
-const appRoute = createBrowserRouter([
+export const appRoute = createBrowserRouter([
   {
     path: "/",
     element: <Apps />,
