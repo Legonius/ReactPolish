@@ -32,7 +32,7 @@ const Body = () => {
       data = await data.json();
       setRestaurentList(data.products);
       setCopyList(data.products);
-      console.log(data);
+      console.log(data.products);
     } catch (error) {
       console.log(error.message);
     }
