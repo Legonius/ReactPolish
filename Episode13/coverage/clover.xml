@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1729269505554" clover="3.2.0">
-  <project timestamp="1729269505554" name="All files">
-    <metrics statements="53" coveredstatements="38" conditionals="10" coveredconditionals="5" methods="19" coveredmethods="11" elements="82" coveredelements="54" complexity="0" loc="53" ncloc="53" packages="2" files="7" classes="7"/>
+<coverage generated="1729269747861" clover="3.2.0">
+  <project timestamp="1729269747861" name="All files">
+    <metrics statements="53" coveredstatements="39" conditionals="10" coveredconditionals="5" methods="19" coveredmethods="12" elements="82" coveredelements="56" complexity="0" loc="53" ncloc="53" packages="2" files="7" classes="7"/>
     <package name="Components">
-      <metrics statements="52" coveredstatements="37" conditionals="10" coveredconditionals="5" methods="19" coveredmethods="11"/>
+      <metrics statements="52" coveredstatements="38" conditionals="10" coveredconditionals="5" methods="19" coveredmethods="12"/>
       <file name="Body.js" path="/Users/macbook/Documents/Namaste React/Episode13/Src/Components/Body.js">
         <metrics statements="36" coveredstatements="22" conditionals="8" coveredconditionals="4" methods="11" coveredmethods="4"/>
         <line num="5" count="1" type="stmt"/>
@@ -44,13 +44,13 @@
         <line num="78" count="0" type="cond" truecount="0" falsecount="2"/>
       </file>
       <file name="Card.js" path="/Users/macbook/Documents/Namaste React/Episode13/Src/Components/Card.js">
-        <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
       <file name="Loading.js" path="/Users/macbook/Documents/Namaste React/Episode13/Src/Components/Loading.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
