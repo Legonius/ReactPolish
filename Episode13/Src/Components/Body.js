@@ -32,7 +32,7 @@ const Body = () => {
       data = await data.json();
       setRestaurentList(data.products);
       setCopyList(data.products);
-      console.log(data.products);
+      // console.log("data:", data.products);
     } catch (error) {
       console.log(error.message);
     }
@@ -66,6 +66,7 @@ const Body = () => {
         </button>
         <form role="form" onSubmit={handleSearch}>
           <input
+            data-testid="test-search"
             onChange={(e) => dynamicResult(e)}
             type="text"
             value={search}
@@ -73,7 +74,7 @@ const Body = () => {
           <button type="submit">Search</button>
         </form>
       </div>
-      {copyList.length > 0 ? (
+      {copyList?.length > 0 ? (
         copyList?.map((restaurent) =>
           restaurent.rating > 4 ? (
             <RecommendedCard key={restaurent.id} obj={restaurent} />
