@@ -64,7 +64,7 @@ const Body = () => {
         <button onClick={filterList}>
           {!filtered ? "Filter High Ratings" : "Unfilter"}
         </button>
-        <form onSubmit={handleSearch}>
+        <form role="form" onSubmit={handleSearch}>
           <input
             onChange={(e) => dynamicResult(e)}
             type="text"
